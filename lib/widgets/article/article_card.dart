@@ -15,31 +15,79 @@ class _ArticleCardState extends State<ArticleCard> {
       child: Container(
         height: 100,
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-        color: Color.fromARGB(255, 199, 199, 199),
+        color: Colors.white,
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
-                Icon(Icons.account_circle), // 添加用戶頭像圖標
-                Text('Username'), // 添加用戶名
+                Icon(
+                  Icons.account_circle,
+                  size: 18,
+                ),
+                SizedBox(width: 10),
+                Text(
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                  'Username',
+                ),
               ],
             ),
-            Text('Title'), // 添加標題
-            Text('Description'), // 添加描述
+            Text(
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+              'Title',
+            ),
+            Text(
+              style: TextStyle(),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              'Your long text goes here, and it should not exceed one line with ellipsis when overflowed.',
+            ),
             Row(
               children: [
                 Icon(
-                  Icons.thumb_up,
-                  size: 16,
-                ), // 添加贊數圖標
-                Text('Likes'), // 添加贊數
-                Icon(
                   Icons.favorite,
                   size: 16,
-                ), // 添加收藏圖標
-                Text('Favorites'), // 添加收藏數
+                  color: Colors.red,
+                ),
+                SizedBox(width: 5),
+                Text(
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                  'Likes',
+                ),
+                SizedBox(width: 10),
+                Icon(
+                  Icons.chat_bubble,
+                  size: 16,
+                  color: Colors.blue,
+                ),
+                SizedBox(width: 5),
+                Text(
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                  'Comments',
+                ),
+                SizedBox(width: 5),
+                Icon(
+                  Icons.bookmark,
+                  size: 18,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 5),
+                Text(
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                  'Bookmark',
+                ),
               ],
             ),
           ],

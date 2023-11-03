@@ -10,12 +10,13 @@ class SearchAppBar extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
       height: 30,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5), // 設置圓角
-        color: AppColors.inputColor, // 背景填充顏色
+        borderRadius: BorderRadius.circular(5),
+        color: AppColors.inputColor,
       ),
       child: const TextField(
         style: TextStyle(
           fontSize: 16,
+          color: Colors.white,
         ),
         decoration: InputDecoration(
           isCollapsed: true,

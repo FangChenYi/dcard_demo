@@ -25,7 +25,15 @@ class _HomePageState extends State<HomePage> {
           bottom: PreferredSize(
             preferredSize: Size.fromHeight(48.0),
             child: Container(
-              color: Colors.white,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.grey,
+                    width: 0.2,
+                  ),
+                ),
+              ),
               child: const TabBar(
                 labelStyle:
                     TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
