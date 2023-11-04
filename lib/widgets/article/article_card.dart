@@ -28,64 +28,49 @@ class _ArticleCardState extends State<ArticleCard> {
                 ),
                 SizedBox(width: 10),
                 Text(
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
-                  'Username',
+                  style: TextStyle(color: Colors.grey),
+                  '看板',
+                ),
+                Text(
+                  style: TextStyle(color: Colors.grey, fontSize: 20),
+                  ' · ',
+                ),
+                Text(
+                  style: TextStyle(color: Colors.grey),
+                  '1 小時',
                 ),
               ],
             ),
             Text(
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               'Title',
             ),
             Text(
               style: TextStyle(),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              'Your long text goes here, and it should not exceed one line with ellipsis when overflowed.',
+              'Your long text goes here, and it should not exceed one line with ellipsiswhen overflowed.',
             ),
             Row(
               children: [
-                Icon(
-                  Icons.favorite,
-                  size: 16,
-                  color: Colors.red,
-                ),
+                Icon(Icons.favorite, size: 16, color: Colors.red),
                 SizedBox(width: 5),
                 Text(
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
+                  style: TextStyle(color: Colors.grey),
                   'Likes',
                 ),
                 SizedBox(width: 10),
-                Icon(
-                  Icons.chat_bubble,
-                  size: 16,
-                  color: Colors.blue,
-                ),
+                Icon(Icons.chat_bubble, size: 16, color: Colors.blue),
                 SizedBox(width: 5),
                 Text(
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
+                  style: TextStyle(color: Colors.grey),
                   'Comments',
                 ),
                 SizedBox(width: 5),
-                Icon(
-                  Icons.bookmark,
-                  size: 18,
-                  color: Colors.grey,
-                ),
+                Icon(Icons.bookmark, size: 18, color: Colors.grey),
                 SizedBox(width: 5),
                 Text(
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
+                  style: TextStyle(color: Colors.grey),
                   'Bookmark',
                 ),
               ],
